@@ -1,0 +1,12 @@
+<odoo>
+  <!-- Action to open the TO DO list -->
+     <act_window id="action_biblio_list"
+       name="biblio list"
+       res_model="biblio.biblio"
+       view_mode="tree,form"/>
+     <!-- Menu item to open the TO DO list -->
+     <menuitem id="menu_biblio_list"
+       name="list biblio"
+       action="action_biblio_list"/>
+  
+</odoo>

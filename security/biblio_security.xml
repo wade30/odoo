@@ -1,0 +1,17 @@
+<?xml version="1.0" ?>
+<odoo>
+    <record id="module_biblio_category" model="ir.module.category">
+    <field name="name">BIBLIO</field>
+    </record>
+
+    <!-- uadb User Group -->
+    <record id="biblio_group_user" model="res.groups">
+        <field name="name">User</field>
+        <field name="category_id" 
+            ref="module_biblio_category"/>
+        <field name="implied_ids" 
+            eval="[(4, ref('base.group_user'))]"/>
+    </record>
+
+   
+</odoo>
